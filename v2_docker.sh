@@ -112,7 +112,7 @@ function install(){
 }
 
 echo -e "${green} ******************** ${plain}"
-echo -e "${green} 牛逼的v2ray一键安装脚本 ${plain}"
+echo -e "${green} 最牛逼的v2ray一键安装脚本 ${plain}"
 echo -e "${green} ******************** ${plain}"
 echo -e "${green} 1安装v2ray ${plain}"
 echo -e "${green} 2卸载v2ray ${plain}"
