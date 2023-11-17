@@ -100,7 +100,7 @@ cat > /etc/v2ray/config.json <<EOF
   }
 }
 EOF
-read  -p "请输入端口" port
+read  -p "请输入端口: " port
 docker run -d -p ${port}:6060 --name v2ray --restart=always -v /etc/v2ray:/etc/v2ray teddysun/v2ray
 ufw allow ${port}
 }
