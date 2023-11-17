@@ -102,6 +102,7 @@ cat > /etc/v2ray/config.json <<EOF
 EOF
 read  -p "请输入端口" port
 docker run -d -p ${port}:6060 --name v2ray --restart=always -v /etc/v2ray:/etc/v2ray teddysun/v2ray
+ufw allow ${port}
 }
 
 
@@ -111,7 +112,7 @@ function install(){
 }
 
 echo -e "${green} ******************** ${plain}"
-echo -e "${green} 垃圾v2ray一键安装脚本 ${plain}"
+echo -e "${green} 牛逼的v2ray一键安装脚本 ${plain}"
 echo -e "${green} ******************** ${plain}"
 echo -e "${green} 1安装v2ray ${plain}"
 echo -e "${green} 2卸载v2ray ${plain}"
